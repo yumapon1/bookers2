@@ -13,3 +13,24 @@
  *= require_tree .
  *= require_self
  */
+ // application.scssの冒頭に以下の記述を追記
+
+$fa-font-path: '@fortawesome/fontawesome-free/webfonts';
+@import '@fortawesome/fontawesome-free/scss/fontawesome';
+@import '@fortawesome/fontawesome-free/scss/solid';
+@import '@fortawesome/fontawesome-free/scss/regular';
+@import '@fortawesome/fontawesome-free/scss/brands';
+@import '@fortawesome/fontawesome-free/scss/v4-shims';
+
+ @import "font-awesome";
+ @import "bootstrap";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;;
+ }
+
+ .navbar-dark,.navbar-brand,{
+   color:#fff;
+ }
