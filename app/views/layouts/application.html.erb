@@ -31,62 +31,70 @@
           </button>
 
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ml-auto test=white">
+          <ul class="navbar-nav ml-auto">
             <% if user_signed_in? %>
             <li class = "nav-link">
               <%= link_to user_path(current_user.id) do %>
-              <i class="fas fa-home"></i>
-              <span>Home</span>
+              <span style="color:white">
+                <i class="fas fa-home"></i>
+              Home</span>
             <% end %>
             </li>
 
             <li class = "nav-link">
               <%= link_to users_path do %>
+              <span style="color:white">
               <i class="fas fa-users"></i>
-              <span>Users</span>
+              Users</span>
               <% end %>
             </li>
 
             <li class= "nav-link ">
              <%= link_to books_path do %>
+             <span style="color:white">
              <i class="fas fa-book-open"></i>
-             <span>Books</span>
+             Books</span>
              <% end %>
             </li>
 
             <li class= "nav-link">
              <%= link_to destroy_user_session_path ,method: :delete do %>
+             <span style="color:white">
              <i class="fas fa-sign-out-alt"></i>
-             <span>Log out</span>
+             Log out</span>
              <% end %>
             </li>
 
             <% else %>
             <li class= "nav-link">
               <%= link_to root_path do %>
+              <span style="color:white">
               <i class="fas fa-home"></i>
-              <span>Home</span>
+              Home</span>
               <% end %>
             </li>
 
             <li class= "nav-link ">
               <%= link_to home_about_path do %>
+              <span style="color:white">
               <i class="fas fa-link"></i>
-              <span>About</span>
+              About</span>
               <% end %>
             </li>
 
             <li class= "nav-link">
               <%= link_to  new_user_registration_path do %>
+              <span style="color:white">
               <i class="fas fa-user-plus"></i>
-              <span>Sign up</span>
+              Sign up</span>
               <% end %>
             </li>
 
             <li class= "nav-link ">
               <%= link_to new_user_session_path do %>
+              <span style="color:white">
               <i class="fas fa-sign-in-alt"></i>
-              <span>Log in</span>
+              Log in</span>
               <% end %>
             </li>
             <% end %>
